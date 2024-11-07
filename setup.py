@@ -17,7 +17,7 @@ setuptools.setup(
     author="Eugenio Lacuesta",
     author_email="eugenio.lacuesta@gmail.com",
     url="https://github.com/scrapy-plugins/scrapy-playwright",
-    packages=["scrapy_playwright"],
+    packages=["scrapy_patchright"],
     classifiers=[
         "Development Status :: 4 - Beta",
         "License :: OSI Approved :: BSD License",
