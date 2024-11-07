@@ -10,8 +10,8 @@ from ipaddress import ip_address
 from time import time
 from typing import Awaitable, Callable, Dict, Optional, Tuple, Type, TypeVar, Union
 
-from playwright._impl._errors import TargetClosedError
-from playwright.async_api import (
+from patchright._impl._errors import TargetClosedError
+from patchright.async_api import (
     BrowserContext,
     BrowserType,
     Download as PlaywrightDownload,
@@ -36,9 +36,9 @@ from scrapy.utils.misc import load_object
 from scrapy.utils.reactor import verify_installed_reactor
 from twisted.internet.defer import Deferred, inlineCallbacks
 
-from scrapy_playwright.headers import use_scrapy_headers
-from scrapy_playwright.page import PageMethod
-from scrapy_playwright._utils import (
+from scrapy_patchright.headers import use_scrapy_headers
+from scrapy_patchright.page import PageMethod
+from scrapy_patchright._utils import (
     _ThreadedLoopAdapter,
     _encode_body,
     _get_float_setting,
@@ -759,7 +759,7 @@ class ScrapyPlaywrightDownloadHandler(HTTPDownloadHandler):
                     " PLAYWRIGHT_PROCESS_REQUEST_HEADERS setting is deprecated. The function"
                     " should accept three (3) keyword arguments instead:"
                     " browser_type_name: str,"
-                    " playwright_request: playwright.async_api.Request,"
+                    " playwright_request: patchright.async_api.Request,"
                     " scrapy_request_data: dict",
                     category=ScrapyDeprecationWarning,
                     stacklevel=1,

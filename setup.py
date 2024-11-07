@@ -1,6 +1,6 @@
 import setuptools
 
-from scrapy_playwright import __version__
+from scrapy_patchright import __version__
 
 
 with open("README.md", "r", encoding="utf-8") as fh:
@@ -8,7 +8,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 
 setuptools.setup(
-    name="scrapy-playwright",
+    name="scrapy-patchwright",
     version=__version__,
     license="BSD",
     description="Playwright integration for Scrapy",
